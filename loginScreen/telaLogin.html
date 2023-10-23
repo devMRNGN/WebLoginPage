@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container-login">
+      <p class="cadastro-title">LOGIN</p>
+      <input id="email-login" autocomplete="email" class="inputs-email" type="text" placeholder="Email ou Username">
+      <div class="container-senha-cadastro">
+         <input id="password-login" autocomplete="current-password" id="password-login" class="inputs-email seePassword no-right-border" type="password" name="senha" placeholder="Senha">
+         <img id="ver-senha-login" class="ver-senha cadastro no-left-border eye-image-cadastro" width="43" height="43" src="https://img.icons8.com/ios/50/blind.png" alt="blind"/>
+      </div>
+      <div class="container-buttons">
+         <button class="button entrar button-cadastrarse" type="submit">Entrar</button>
+         <button class="button cadastrar button-cadastrarse">Cadastrar</button>
+      </div>
+   </div>
+   <form id="form-cadastro">
+      <div class="container-cadastro"  style="display: none;">
+         <div class="header-cadastro">
+            <p class="cadastro-title">Cadastre-se</p>
+            <img class="button-modal-exit" width="30" height="30" src="https://img.icons8.com/ios/50/exit--v1.png" alt="exit--v1"/>
+         </div>
+         <div class="inputs-cadastro">
+            <div class="nome-sobrenome">
+               <input name="Nome" required class="inputs-text" type="text" placeholder="Nome">
+               <input name="Sobrenome" required class="inputs-text" type="text" placeholder="Sobrenome">
+            </div>
+            <div class="email-senha">
+               <input name="Username" autocomplete="username" required class="inputs-email" type="text" placeholder="Username">
+               <input id="email-cadastro" autocomplete="email" class="inputs-email" type="text" placeholder="Email">
+               <div class="container-senha-cadastro">
+                  <input id="senha-cadastro" class="inputs-email seePassword no-right-border" autocomplete="current-password" type="password" name="senha" placeholder="Senha">
+                  <img id="ver-senha-cadastro" class="ver-senha cadastro no-left-border eye-image-cadastro" width="43" height="43" src="https://img.icons8.com/ios/50/blind.png" alt="blind"/>
+               </div>
+            </div>
+            <div class="nome-sobrenome">
+               <input name="Curso" required class="inputs-text" type="text" placeholder="Curso">
+               <input name="Link Imagem" class="inputs-text" type="text" placeholder="Link Imagem">
+            </div>
+         </div>
+         <div class="container-button-cadastrarse">
+            <button type="submit" class="button-cadastrarse">CADASTRE-SE</button>
+         </div>
+      </div>
+   </form>
+   <script src="script.js"></script>
+</body>
+</html>
+
+<!--432px-->

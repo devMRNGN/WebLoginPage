@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>LOGADO</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script>
+      $(() => {
+         function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+         }
+         
+         const jwt = getCookie("sessionToken");
+         
+         if(!jwt){
+            window.location.href = "../loginScreen/telaLogin.html";
+         }
+      });
+   </script>
+</head>
+<body>
+   <header class="header-container">
+      <div class="container-usuario">
+         <div id="userPhoto">
+            <img class="photo" src="" alt="">
+         </div>
+         <span id="username"></span>
+      </div>
+      <img class="logout" width="30" height="30" src="https://img.icons8.com/ios/50/000000/exit--v1.png" alt="exit--v1"/>
+   </header>
+   <script src="script.js"></script>
+</body>
+</html>
